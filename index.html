@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>5-4-1 タブメニュー</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/css/5-4-1.css">
+<script src="js/jquery-3.6.0.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
+  <style>
+    .section{
+        display: flex;
+        padding: auto;
+        padding: 40px;
+        width: 60%;
+        margin-left: 500px;
+    } 
+    .section img{
+        height: 250px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="section">
+        <img src="me.jpg" alt="" width="200" height="200">    
+    <div class="text">
+        <br><br>
+        <h1> Dr. Pann Yu Mon  </h1>              
+        <p>Assistant Professor </p>
+        <p>Information Science</p>
+        <p> Faculty of information</p>    </div>
+       
+    </p>
+    </div>
+
+
+  <div class="wrapper">
+  <ul class="tab">
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publication">Publications</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#supervision">Supervision</a></li>
+  </ul>
+
+    <div id="research" class="area">
+      <h2>Research Interest</h2>
+      My research interests include big data analytics, software engineering, cloud computing, natural language processing and information retrieval. 
+
+My current research relates to three specific areas: 
+
+
+      <ul>
+        <li>i) Graph Database, </li>
+        <li>ii) Smart Campus application: information retrieval of student performance data by face recognition </li>
+        <li>iii) Data analysis and data visualization on global education data,  global migration data </li>
+      </ul>
+    <!--/area--></div>
+    <div id="publication" class="area">
+        <div id="accordion">           
+            <h3>Journal Papers</h3>
+            <div>
+              <p>
+              <ol>
+                <li> Pann Yu Mon, Yoshiki Mikami, Myanmar Language Search Engine, International Journal of Computer Science
+                  Issues, Vol. 8, Issue 2, pp.118～126, March 2011, ISSN (Online) : 1694-0814
+                </li>
+                <li>
+                  Pann Yu Mon, Chew Yew Choong, Yoshiki Mikami, Language Specific Crawler for Myanmar Web Pages, International
+                  Journal of Computer Science Issues, Vol. 8, Issue 2, pp.127～135, March 2011, ISSN (Online) : 1694-0814
+                </li>
+                        
+              </ol>
+              </p>
+            </div>
+
+            <h3>International Conference Papers</h3>
+            <div>
+              <p>
+              <ol>
+                <li>
+                    Pann Yu Mon, Shuta Ueno, Gengo Suzuki, Naoyuki Karasawa, Keitaro Horikawa, Masahiro Nishikawa, Masahiro Awaji, Tetsuaki Isonishi, Implementation of cooperative and work-integrated education at “Professional University” in Japan: Case studies of Faculty of Information, Kaishi Professional University, 
+                    WACE The 4th International Research Symposium, Kanazawa Institute of Technology, Japan, September 2022.
+                  </li>
+                <li>
+                    Pann Yu Mon, Maung Maung Thant, Ohnmar Htun, Yoshiki Mikami, Statistical Analysis of Myanmar Words on the
+                    World Wide Web for Search Engine Development, International Conference on Computer Application (ICCA-2009),
+                    Yangon, Myanmar, March 2009, pp.219～224.
+                  </li>
+                  <li>
+                    Arai Yuki, Pann Yu Mon, T.Nakahira Katsuko, Mikami Yoshiki, Efficient language focused crawler using
+                    alternative language identification methods. (IPSJ-2008)
+                  </li>
+                  <li>
+                    Pann Yu Mon, Yoshiki Mikami, Language Specific Crawler for Myanmar Web pages, International Conference on
+                    Human and Computer (HC-2008), Nagaoka, Japan, November 2010, pp.271～276.
+                  </li>
+                  <li>
+                    Pann Yu Mon, Yoshiki Mikami, Myanmar Language Search Engine, International Conference on Advances in ICT for
+                    Emerging Regions (ICTer-2010), Colombo, Srilanka, September 2010, pp.69～74.
+                  </li>
+                  <li>
+                    Pann Yu Mon, Yoshiki Mikami, Myanmar Web Pages Indexer with an Enhanced Dictionary, International Conference
+                    on Computer Application (ICCA-2011), Yangon, Myanmar. April 2011..
+                  </li>                        
+              </ol>
+              </p>
+            </div>                  
+                <h3>Book</h3>
+                <div>
+                  <p>
+                  <ol>
+                    <li> Yoshiki Mikamai, Shigeaki Kodama, Chew Yew Choong, Pann Yu Mon, Ohnmar Htun, Tin Htay Hlaing, Measuring linguistic diversity in the Web, 
+                        NET.LANG, Towards the multilingual cyberspace, UNESCO, January 2011. 
+
+                    </li>
+                    <li>
+                        Pann Yu Mon, Madhukara Phatak, Complexities of Asian language queries in search engines: A Case Study, NET.LANG, Towards the multilingual 
+                        cyberspace, UNESCO, January 2011.
+                    </li>
+                            
+                  </ol>
+                  </p>
+                </div>        
+          </div>
+      <!-- <h2>ドリンク</h2>
+      <ul>
+        <li>ウーロン茶</li>
+        <li>オレンジジュース</li>
+        <li>ジンジャーエール</li>
+      </ul> -->
+    <!--/area--></div>
+    <div id="teaching" class="area">
+      <h2>Major</h2>
+      <ul>
+        <li>Web Development Course (Class ID : 20PRG20421) </li>
+        <li>Comprehensive ICT utilization Course (Class ID : 20PBL4032r) </li>
+        <li>Clinical practice training I (Class ID : 20PBL30221) </li>
+        <li>Clinical practice training II (Class ID : 20PBL20121) </li>
+        
+        <h2>Minor</h2>
+        <li>ICT Exercises Course (Basic Information)(Class ID : 20COM20421)</li>
+        <li>ICT Exercises Course (Hardware and software)(Class ID : 20COM20321)</li>
+        
+      </ul>
+    <!--/area--></div>
+    <div id="supervision" class="area">
+        <h2>Not yet </h2>
+        <ul>
+          <li></li>
+          
+        </ul>
+      <!--/area--></div>
+<!--wrapper--></div>
+    
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/js/5-4-1.js"></script>
+</body>
+
+</html>
